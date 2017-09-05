@@ -1,0 +1,171 @@
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+
+.project{
+  margin-left: 75px;
+  margin-top: 150px;
+  position: relative;
+  height: 525px;
+
+  &:hover{
+    .project__img--portrait{
+      width: 75%;
+      max-width: 800px;
+      animation: hoverImage 0.75s ease-in;
+    }
+    .project__list{
+      li{
+        color: $green;
+        transition-duration: 1s;
+      }
+    }
+    &:after{
+      width: 600px;
+      animation: afterExtend 0.5s ease-in;
+    }
+    a{
+      opacity: 1;
+      top: 55%;
+      animation: linkUp 0.5s ease-in;
+    }
+  }
+
+  .project__img--portrait{
+    width: 35%;
+    max-width: 420px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    background-size: cover !important;
+    animation: hoverImageBack 0.5s ease-in;
+    z-index: 1;
+  }
+  #project__img--Path{
+    width: 55%;
+    max-width: 900px;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+    right: 200px;
+  }
+  h1{
+    font-family: 'signpainter';
+    font-size: 15em;
+    z-index: 2;
+    position: absolute;
+    bottom: -20px;
+    opacity: 0.25;
+    letter-spacing: 1px;
+  }
+  .project__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 300px;
+    z-index: 2;
+    li{
+      color: white;
+      font-family: 'Avenir LT Std 65 Medium';
+      margin-right: 35px;
+      font-size: 30px;
+    }
+  }
+  &:after{
+    content: '';
+    width: 0px;
+    height: 190px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    bottom: 125px;
+    z-index: 1;
+    animation: afterLeave 0.5s ease-in;
+  }
+  a{
+    text-decoration: none;
+    color: $grey;
+    left: 300px;
+    top: 75%;
+    position: absolute;
+    font-family: 'Avenir LT Std 35 Light';
+    z-index: 3;
+    font-size: 20px;
+    opacity: 0;
+    animation: linkDown 0.5s ease-in;
+    &:after{
+      content: '';
+      background-image: url(../../assets/img/arrow.png);
+      display: block;
+      width: 24px;
+      height: 18px;
+      position: absolute;
+      top: 3px;
+      right: -34px;
+    }
+  }
+}
+
+@keyframes hoverImage {
+  from{
+    width: 35%;
+    max-width: 420px;
+  }
+  to{
+    width: 75%;
+    max-width: 800px;
+  }
+}
+
+@keyframes hoverImageBack {
+  from{
+    width: 75%;
+    max-width: 800px;
+  }
+  to{
+    width: 35%;
+    max-width: 420px;
+  }
+}
+
+@keyframes afterExtend {
+  from {
+    width: 0px;
+  }
+  to{
+    width: 600px;
+  }
+}
+
+@keyframes afterLeave {
+  from {
+    width: 600px;
+  }
+  to{
+    width: 0px;
+  }
+}
+
+@keyframes linkUp{
+  from{
+    opacity: 0;
+    top: 75%;
+  }
+  to{
+    opacity: 1;
+    top: 55%;
+  }
+}
+
+@keyframes linkDown{
+  from{
+    opacity: 1;
+    top: 55%;
+  }
+  to{
+    opacity: 0;
+    top: 75%;
+  }
+}

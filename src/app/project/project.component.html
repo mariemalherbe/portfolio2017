@@ -1,0 +1,9 @@
+<section class="project" *ngFor="let project of projects | async">
+  <div class="project__img--portrait"  [style.background]="'url(../../assets/img/' + project.image + ')'"></div>
+  <h1>{{project.name}}</h1>
+  <ul class="project__list">
+    <li  *ngFor="let tag of project.tags.split(';')">{{tag}}</li>
+  </ul>
+  <a href="#">Discover</a>
+  <img id="project__img--Path" src={{project.path}} alt="">
+</section>

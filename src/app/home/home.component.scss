@@ -1,0 +1,50 @@
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+.landingPage{
+  font-family: 'Avenir LT Std 65 Medium';
+  padding-bottom: 100px;
+  .img--darken{
+    position: absolute;
+    z-index: 5;
+    bottom: -150px;
+    mix-blend-mode: darken;
+    width: 100%;
+  }
+  .landingPage__background{
+    position: relative;
+    width: 90vw;
+    height: 100vh;
+    background-color: $grey;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 65px;
+    h1{
+      color: white;
+      opacity: 0.45;
+      z-index: 2;
+      span{
+        letter-spacing: -0.05em;
+        font-size: 15em;
+        padding-right: 55px;
+        font-family: 'signpainter';
+      }
+    }
+    h2{
+      color: $green;
+      font-size: 30px;
+      width: 500px;
+      z-index: 2;
+    }
+    .svg{
+      position: absolute;
+      z-index: 1;
+      top: 129px;
+      right: 50px;
+      width: 65%;
+    }
+  }
+}

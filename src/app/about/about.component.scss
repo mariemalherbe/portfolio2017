@@ -1,3 +1,109 @@
 @import '../../assets/scss/reset';
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/fonts';
+
+.landingPageAbout{
+  font-family: 'Avenir LT Std 35 Light';
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .portrait__path{
+    position: absolute;
+    z-index: 2;
+    left: 35%;
+    width: 70%;
+    max-width: 800px;
+  }
+
+  .portrait__text{
+    width: 60%;
+    background-color: $lightGrey;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+    .portrait__description{
+      width: 65%;
+      max-width: 500px;
+      line-height: 28px;
+      padding-bottom: 65px;
+      z-index: 3;
+    }
+    .portrait__values{
+      width: 65%;
+      max-width: 500px;
+      font-size: 20px;
+      font-family: 'Avenir LT Std 65 Medium';
+      line-height: 30px;
+      padding-bottom: 150px;
+      z-index: 3;
+    }
+    .list__items{
+      width: 65%;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      li{
+        color: $green;
+        font-family: 'Avenir LT Std 85 Heavy';
+        font-size: 20px;
+      }
+    }
+    .list__logos{
+      width: 20%;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: -25px;
+      left: 15%;
+    }
+    h1{
+      letter-spacing: -0.02em;
+      font-size: 15em;
+      padding-right: 55px;
+      font-family: 'signpainter';
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      opacity: 0.05;
+    }
+  }
+
+  .portrait__details{
+    width: 40%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    .portrait__img{
+      position: absolute;
+      width: 125%;
+      left: -50px;
+      z-index: 3;
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      position: absolute;
+      bottom: -25px;
+      left: 50px;
+      li{
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

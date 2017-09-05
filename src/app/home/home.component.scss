@@ -4,12 +4,13 @@
 .landingPage{
   font-family: 'Avenir LT Std 65 Medium';
   padding-bottom: 100px;
-  transform: translateX(0%);
+  transform: inherit;
   animation: landingPageEnter 1s ease-in;
+  position: relative;
   .img--darken{
     position: absolute;
     z-index: 5;
-    bottom: -150px;
+    bottom: 0px;
     mix-blend-mode: darken;
     width: 100%;
   }
@@ -56,6 +57,6 @@
     transform: translateX(100%);
   }
   to{
-    transform: translateX(0%);
+    transform: inherit;
   }
 }

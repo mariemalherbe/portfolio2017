@@ -105,6 +105,28 @@
       top: 3px;
       right: -34px;
     }
+    &:before{
+      content: '';
+      width: 0px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      background-color: $green;
+      top: 15px;
+      mix-blend-mode: multiply;
+      animation: hoverLeave 0.5s ease-in;
+    }
+    &:hover:before{
+        content: '';
+        width: 80px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        background-color: $green;
+        top: 15px;
+        mix-blend-mode: multiply;
+        animation: hoverEnter 0.5s ease-in;
+    }
   }
 }
 
@@ -167,5 +189,23 @@
   to{
     opacity: 0;
     top: 75%;
+  }
+}
+
+@keyframes hoverEnter {
+  from{
+    width: 0px;
+  }
+  to{
+    width: 80px;
+  }
+}
+
+@keyframes hoverLeave {
+  from{
+    width: 80px;
+  }
+  to{
+    width: 0px;
   }
 }

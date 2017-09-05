@@ -1,8 +1,8 @@
 <nav>
   <ul>
-    <li> <a [routerLink]="['home']"
-   [routerLinkActive]="['is-active']">Home.</a></li>
-    <li><a [routerLink]="['about']"
-   [routerLinkActive]="['is-active']">About.</a></li>
+    <li> <a [routerLink]="['/home']"[routerLinkActive]="['is-active']">Home.</a></li>
+    <li><a [routerLink]="['/about']"[routerLinkActive]="['is-active']">About.</a></li>
   </ul>
 </nav>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

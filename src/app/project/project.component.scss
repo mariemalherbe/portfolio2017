@@ -104,6 +104,18 @@
       position: absolute;
       top: 3px;
       right: -34px;
+      animation: hoverEnterArrow 0.5s ease-in;
+    }
+    &:hover:after{
+      content: '';
+      background-image: url(../../assets/img/arrow.png);
+      display: block;
+      width: 24px;
+      height: 18px;
+      position: absolute;
+      top: 3px;
+      right: -65px;
+      animation: hoverLeaveArrow 0.5s ease-in;
     }
     &:before{
       content: '';
@@ -114,7 +126,7 @@
       background-color: $green;
       top: 15px;
       mix-blend-mode: multiply;
-      animation: hoverLeave 0.5s ease-in;
+      animation: hoverLeaveProject 0.5s ease-in;
     }
     &:hover:before{
         content: '';
@@ -125,7 +137,7 @@
         background-color: $green;
         top: 15px;
         mix-blend-mode: multiply;
-        animation: hoverEnter 0.5s ease-in;
+        animation: hoverEnterProject 0.5s ease-in;
     }
   }
 }
@@ -192,7 +204,7 @@
   }
 }
 
-@keyframes hoverEnter {
+@keyframes hoverEnterProject {
   from{
     width: 0px;
   }
@@ -201,11 +213,29 @@
   }
 }
 
-@keyframes hoverLeave {
+@keyframes hoverLeaveProject {
   from{
     width: 80px;
   }
   to{
     width: 0px;
+  }
+}
+
+@keyframes hoverLeaveArrow {
+  from{
+    right: 50px;
+  }
+  to{
+    right: -65px;
+  }
+}
+
+@keyframes hoverEnterArrow {
+  from{
+    right: -65px;
+  }
+  to{
+    right: -34px;
   }
 }

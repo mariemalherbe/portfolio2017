@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -29,6 +30,10 @@ import { FooterComponent } from './footer/footer.component';
     AngularFireAuthModule,
     RouterModule.forRoot([
       {
+      path:'',
+      component: HomeComponent
+      },
+      {
         path:'home',
         component: HomeComponent
       },
@@ -39,6 +44,6 @@ import { FooterComponent } from './footer/footer.component';
     ])
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [MenuComponent]
 })
 export class AppModule { }

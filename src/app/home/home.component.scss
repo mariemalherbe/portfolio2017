@@ -4,6 +4,8 @@
 .landingPage{
   font-family: 'Avenir LT Std 65 Medium';
   padding-bottom: 100px;
+  transform: translateX(0%);
+  animation: landingPageEnter 1s ease-in;
   .img--darken{
     position: absolute;
     z-index: 5;
@@ -46,5 +48,14 @@
       right: 50px;
       width: 65%;
     }
+  }
+}
+
+@keyframes landingPageEnter {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
   }
 }

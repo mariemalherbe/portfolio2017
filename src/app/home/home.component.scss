@@ -29,6 +29,9 @@
       color: white;
       opacity: 0.45;
       z-index: 2;
+      animation: titleIn 1.5s ease-in;
+      margin-top: inherit;
+      opacity: 0.45;
       span{
         letter-spacing: -0.05em;
         font-size: 15em;
@@ -41,6 +44,7 @@
       font-size: 30px;
       width: 500px;
       z-index: 2;
+      opacity: 1;
     }
     .svg{
       position: absolute;
@@ -58,5 +62,16 @@
   }
   to{
     transform: inherit;
+  }
+}
+
+@keyframes titleIn{
+  from{
+    margin-top: 500px;
+    opacity: 0;
+  }
+  to{
+    margin-top: inherit;
+    opacity: 0.45;
   }
 }

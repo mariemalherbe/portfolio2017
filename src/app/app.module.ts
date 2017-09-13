@@ -12,6 +12,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { FooterComponent } from './footer/footer.component';
+import { ExpertiseComponent } from './expertise/expertise.component';
+import { LastprojectsComponent } from './lastprojects/lastprojects.component';
 
 
 
@@ -22,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     AboutComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    ExpertiseComponent,
+    LastprojectsComponent
   ],
   imports: [
     BrowserModule,

@@ -16,4 +16,14 @@ projects: FirebaseListObservable<any[]>;
   ngOnInit() {
   }
 
+  colorTags: string = "white";
+
+ onMouseOver(myColor): void {
+   this.colorTags = myColor;
+ }
+
+ onMouseOut(): void {
+    this.colorTags = "white";
+  }
+
 }

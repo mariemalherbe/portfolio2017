@@ -2,6 +2,64 @@
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/fonts';
 
+
+/*
+Flaticon icon font: Flaticon
+Creation date: 20/09/2017 16:19
+*/
+
+@font-face {
+font-family: "Flaticon";
+src: url("font/Flaticon.eot");
+src: url("font/Flaticon.eot?#iefix") format("embedded-opentype"),
+   url("font/Flaticon.woff") format("woff"),
+   url("font/Flaticon.ttf") format("truetype"),
+   url("font/Flaticon.svg#Flaticon") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: "Flaticon";
+src: url("font/Flaticon.svg#Flaticon") format("svg");
+}
+}
+
+.fi:before{
+display: inline-block;
+font-family: "Flaticon";
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+line-height: 1;
+text-decoration: inherit;
+text-rendering: optimizeLegibility;
+text-transform: none;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+}
+
+
+.flaticon-dribbble{
+  &:before{
+    content: "\f100";
+    color: $green;
+    font-size: 3vw;
+    &:hover{
+      color: $grey;
+    }
+  }
+}
+
+.flaticon-linkedin:before { content: "\f101"; color: $green; font-size: 3vw}
+.flaticon-instagram:before { content: "\f102"; color: $green; font-size: 3vw}
+
+$font-Flaticon-dribbble: "\f100";
+$font-Flaticon-linkedin: "\f101";
+$font-Flaticon-instagram: "\f102";
+
 footer{
   display: flex;
   justify-content: center;

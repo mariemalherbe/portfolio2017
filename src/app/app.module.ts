@@ -14,6 +14,7 @@ import { environment } from '../environments/environment';
 import { FooterComponent } from './footer/footer.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { LastprojectsComponent } from './lastprojects/lastprojects.component';
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 
 
@@ -34,6 +35,7 @@ import { LastprojectsComponent } from './lastprojects/lastprojects.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
+    NgsRevealModule.forRoot(),
     RouterModule.forRoot([
       {
       path:'',

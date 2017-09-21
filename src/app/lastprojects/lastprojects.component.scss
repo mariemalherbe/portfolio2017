@@ -1,0 +1,215 @@
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+
+
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+
+.project__title{
+  font-family: 'Avenir LT Std 95 Black';
+  font-size: 2vw;
+  padding-top: 165px;
+  padding-left: 65px;
+}
+
+.projects{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin-left: 75px;
+  position: relative;
+  margin-top: 65px;
+
+
+  .project{
+    width: 35%;
+    position: relative;
+    .project__img--portrait{
+      width: 100%;
+      height: 250px;
+      top: 0;
+      background-size: cover !important;
+      z-index: 1;
+      -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+    #project__img--Path{
+      width: 100%;
+      max-width: 900px;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    h1{
+      font-family: 'signpainter';
+      font-size: 7em;
+      z-index: 2;
+      position: absolute;
+      bottom: -65px;
+      opacity: 0.25;
+      letter-spacing: 1px;
+    }
+    .project__list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 60px;
+      left: 55px;
+      z-index: 2;
+      li{
+        color: $green;
+        font-family: 'Avenir LT Std 65 Medium';
+        margin-right: 35px;
+        font-size: 1.3em;
+      }
+    }
+    &:after{
+      content: '';
+      width: 255px;
+      height: 100px;
+      background-color: white;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+    a{
+      text-decoration: none;
+      color: $grey;
+      left: 55px;
+      top: 80%;
+      position: absolute;
+      font-family: 'Avenir LT Std 35 Light';
+      z-index: 3;
+      font-size: 20px;
+      &:after{
+        content: '';
+        background-image: url(../../assets/img/arrow.png);
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        top: 3px;
+        right: -34px;
+        animation: hoverEnterArrow 0.5s ease-in;
+      }
+      &:hover:after{
+        content: '';
+        background-image: url(../../assets/img/arrow.png);
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        top: 3px;
+        right: -65px;
+        animation: hoverLeaveArrow 0.5s ease-in;
+      }
+      &:before{
+        content: '';
+        width: 0px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        background-color: $green;
+        top: 15px;
+        mix-blend-mode: multiply;
+        animation: hoverLeaveProject 0.5s ease-in;
+      }
+      &:hover:before{
+          content: '';
+          width: 80px;
+          height: 5px;
+          display: block;
+          position: absolute;
+          background-color: $green;
+          top: 15px;
+          mix-blend-mode: multiply;
+          animation: hoverEnterProject 0.5s ease-in;
+      }
+    }
+  }
+
+
+}
+
+
+@keyframes afterExtend {
+  from {
+    width: 0px;
+  }
+  to{
+    width: 600px;
+  }
+}
+
+@keyframes afterLeave {
+  from {
+    width: 600px;
+  }
+  to{
+    width: 0px;
+  }
+}
+
+@keyframes linkUp{
+  from{
+    opacity: 0;
+    top: 75%;
+  }
+  to{
+    opacity: 1;
+    top: 55%;
+  }
+}
+
+@keyframes linkDown{
+  from{
+    opacity: 1;
+    top: 55%;
+  }
+  to{
+    opacity: 0;
+    top: 75%;
+  }
+}
+
+@keyframes hoverEnterProject {
+  from{
+    width: 0px;
+  }
+  to{
+    width: 80px;
+  }
+}
+
+@keyframes hoverLeaveProject {
+  from{
+    width: 80px;
+  }
+  to{
+    width: 0px;
+  }
+}
+
+@keyframes hoverLeaveArrow {
+  from{
+    right: 50px;
+  }
+  to{
+    right: -65px;
+  }
+}
+
+@keyframes hoverEnterArrow {
+  from{
+    right: -65px;
+  }
+  to{
+    right: -34px;
+  }
+}

@@ -2,145 +2,165 @@
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/fonts';
 
-.project{
-  margin-left: 75px;
-  margin-top: 150px;
-  position: relative;
-  height: 525px;
 
-  &:hover{
+.projects__container{
+
+  .left{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .right{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .project{
+    margin-left: 75px;
+    margin-top: 150px;
+    position: relative;
+    height: 525px;
+    width: 50vw;
+
+    &:hover{
+      .project__img--portrait{
+        width: 75%;
+        max-width: 800px;
+        animation: hoverImage 0.75s ease-in;
+      }
+      .project__list{
+        li{
+          color: $green;
+          transition-duration: 1s;
+        }
+      }
+      &:after{
+        width: 600px;
+        animation: afterExtend 0.5s ease-in;
+      }
+      a{
+        opacity: 1;
+        top: 55%;
+        animation: linkUp 0.5s ease-in;
+      }
+    }
+
     .project__img--portrait{
-      width: 75%;
-      max-width: 800px;
-      animation: hoverImage 0.75s ease-in;
+      width: 35%;
+      max-width: 420px;
+      height: 400px;
+      position: absolute;
+      top: 0;
+      background-size: cover !important;
+      animation: hoverImageBack 0.5s ease-in;
+      z-index: 1;
+      -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+    #project__img--Path{
+      width: 100%;
+      max-width: 900px;
+      position: absolute;
+      top: 50px;
+      z-index: -1;
+      left: 50px;
+    }
+    h1{
+      font-family: 'signpainter';
+      font-size: 8em;
+      z-index: 2;
+      position: absolute;
+      bottom: 50px;
+      opacity: 0.25;
+      letter-spacing: 0.2px;
     }
     .project__list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 45%;
+      left: 300px;
+      z-index: 2;
       li{
-        color: $green;
-        transition-duration: 1s;
+        color: white;
+        font-family: 'Avenir LT Std 65 Medium';
+        margin-right: 35px;
+        font-size: 30px;
       }
     }
     &:after{
-      width: 600px;
-      animation: afterExtend 0.5s ease-in;
-    }
-    a{
-      opacity: 1;
-      top: 55%;
-      animation: linkUp 0.5s ease-in;
-    }
-  }
-
-  .project__img--portrait{
-    width: 35%;
-    max-width: 420px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    background-size: cover !important;
-    animation: hoverImageBack 0.5s ease-in;
-    z-index: 1;
-  }
-  #project__img--Path{
-    width: 55%;
-    max-width: 900px;
-    position: absolute;
-    top: 100px;
-    z-index: -1;
-    right: 200px;
-  }
-  h1{
-    font-family: 'signpainter';
-    font-size: 15em;
-    z-index: 2;
-    position: absolute;
-    bottom: -20px;
-    opacity: 0.25;
-    letter-spacing: 1px;
-  }
-  .project__list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 45%;
-    left: 300px;
-    z-index: 2;
-    li{
-      color: white;
-      font-family: 'Avenir LT Std 65 Medium';
-      margin-right: 35px;
-      font-size: 30px;
-    }
-  }
-  &:after{
-    content: '';
-    width: 0px;
-    height: 190px;
-    background-color: white;
-    display: block;
-    position: absolute;
-    bottom: 125px;
-    z-index: 1;
-    animation: afterLeave 0.5s ease-in;
-  }
-  a{
-    text-decoration: none;
-    color: $grey;
-    left: 300px;
-    top: 75%;
-    position: absolute;
-    font-family: 'Avenir LT Std 35 Light';
-    z-index: 3;
-    font-size: 20px;
-    opacity: 0;
-    animation: linkDown 0.5s ease-in;
-    &:after{
-      content: '';
-      background-image: url(../../assets/img/arrow.png);
-      display: block;
-      width: 24px;
-      height: 18px;
-      position: absolute;
-      top: 3px;
-      right: -34px;
-      animation: hoverEnterArrow 0.5s ease-in;
-    }
-    &:hover:after{
-      content: '';
-      background-image: url(../../assets/img/arrow.png);
-      display: block;
-      width: 24px;
-      height: 18px;
-      position: absolute;
-      top: 3px;
-      right: -65px;
-      animation: hoverLeaveArrow 0.5s ease-in;
-    }
-    &:before{
       content: '';
       width: 0px;
-      height: 5px;
+      height: 190px;
+      background-color: white;
       display: block;
       position: absolute;
-      background-color: $green;
-      top: 15px;
-      mix-blend-mode: multiply;
-      animation: hoverLeaveProject 0.5s ease-in;
+      bottom: 125px;
+      z-index: 1;
+      animation: afterLeave 0.5s ease-in;
     }
-    &:hover:before{
+    a{
+      text-decoration: none;
+      color: $grey;
+      left: 300px;
+      top: 75%;
+      position: absolute;
+      font-family: 'Avenir LT Std 35 Light';
+      z-index: 3;
+      font-size: 20px;
+      opacity: 0;
+      animation: linkDown 0.5s ease-in;
+      &:after{
         content: '';
-        width: 80px;
+        background-image: url(../../assets/img/arrow.png);
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        top: 3px;
+        right: -34px;
+        animation: hoverEnterArrow 0.5s ease-in;
+      }
+      &:hover:after{
+        content: '';
+        background-image: url(../../assets/img/arrow.png);
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        top: 3px;
+        right: -65px;
+        animation: hoverLeaveArrow 0.5s ease-in;
+      }
+      &:before{
+        content: '';
+        width: 0px;
         height: 5px;
         display: block;
         position: absolute;
         background-color: $green;
         top: 15px;
         mix-blend-mode: multiply;
-        animation: hoverEnterProject 0.5s ease-in;
+        animation: hoverLeaveProject 0.5s ease-in;
+      }
+      &:hover:before{
+          content: '';
+          width: 80px;
+          height: 5px;
+          display: block;
+          position: absolute;
+          background-color: $green;
+          top: 15px;
+          mix-blend-mode: multiply;
+          animation: hoverEnterProject 0.5s ease-in;
+      }
     }
   }
 }
+
+
 
 @keyframes hoverImage {
   from{

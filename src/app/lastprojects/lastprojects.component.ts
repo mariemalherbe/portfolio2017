@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-lastprojects',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lastprojects.component.scss']
 })
 export class LastprojectsComponent implements OnInit {
+projects: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(db: AngularFireDatabase) {
+    this.projects = db.list('/projects');
+  }
 
   ngOnInit() {
   }

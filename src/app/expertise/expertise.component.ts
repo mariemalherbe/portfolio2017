@@ -1,4 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, HostListener, ElementRef, OnInit } from '@angular/core';
+import {NgsRevealConfig} from 'ng-scrollreveal';
+
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-expertise',
@@ -7,9 +17,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpertiseComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
+  }
+
+  constructor(config: NgsRevealConfig) {
+    config.duration = 500;
+    config.origin = 'bottom';
+    config.distance = '200px';
+    config.easing = 'ease-in-out';
   }
 
 }

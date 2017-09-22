@@ -10,10 +10,13 @@ export class LastprojectsComponent implements OnInit {
 projects: FirebaseListObservable<any[]>;
 
   constructor(db: AngularFireDatabase) {
-    this.projects = db.list('/projects');
+    this.projects = db.list('/projects', {
+    query: {
+      orderByChild: 'number',
+      equalTo: 1
+    }
+    });
   }
-
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+    }
 }

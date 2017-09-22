@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { LastprojectsComponent } from './lastprojects/lastprojects.component';
 import {NgsRevealModule} from 'ng-scrollreveal';
+import {Ng2ScrollimateModule} from 'ng2-scrollimate';
 
 
 
@@ -35,6 +36,7 @@ import {NgsRevealModule} from 'ng-scrollreveal';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
+    Ng2ScrollimateModule,
     NgsRevealModule.forRoot(),
     RouterModule.forRoot([
       {

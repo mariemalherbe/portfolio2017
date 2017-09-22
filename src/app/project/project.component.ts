@@ -24,8 +24,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
                 visibility: "visible",
                 transform: 'translateY(0%)'
             })),
-            transition("inactive => active", animate("1000ms ease-in")),
-            transition("active => inactive", animate("1000ms ease-out")),
+            transition("inactive => active", animate("1500ms ease-in")),
+            transition("active => inactive", animate("2000ms ease-out")),
         ])
     ]
 })

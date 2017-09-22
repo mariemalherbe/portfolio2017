@@ -1,7 +1,7 @@
-<section [ngsRevealSet]="{ reset:true}" [ngsInterval]="1000" [ngsSelector]="'.item'" class="expertise" id="expertiseAnimation">
+<section [@animationTitle]="scrollimateOptionsTitle.myScrollimationTitle.currentState" [scrollimate]="scrollimateOptionsTitle.myScrollimationTitle" class="expertise" id="expertiseAnimation">
   <h1>Expertise</h1>
 
-  <div class="item">
+  <div [@animationList]="scrollimateOptions.myScrollimation.currentState" [scrollimate]="scrollimateOptions.myScrollimation" class="item">
     <span>Ui design</span>
     <ul>
       <li>Webdesign</li>
@@ -11,7 +11,7 @@
   </div>
 
 
-<div class="item">
+<div [@animationList2]="scrollimateOptions1.myScrollimation1.currentState" [scrollimate]="scrollimateOptions1.myScrollimation1" class="item">
   <span>Art Direction</span>
   <ul>
     <li>Logos</li>
@@ -20,7 +20,7 @@
 </div>
 
 
-<div class="item">
+<div [@animationList3]="scrollimateOptions2.myScrollimation2.currentState" [scrollimate]="scrollimateOptions2.myScrollimation2" class="item">
   <span>Front-end Development</span>
   <ul>
     <li>HTML5/CSS4</li>

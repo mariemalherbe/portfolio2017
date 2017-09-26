@@ -58,14 +58,14 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
             state("inactiveTitle", style({
                 opacity: 0,
                 visibility: "hidden",
-                transform: 'translateX(100%)'
+                transform: 'translateY(100%)'
             })),
             state("activeTitle", style({
                 opacity: 1,
                 visibility: "visible",
-                transform: 'translateX(0%)'
+                transform: 'translateY(0%)'
             })),
-            transition("inactiveTitle => activeTitle", animate("1500ms ease-in")),
+            transition("inactiveTitle => activeTitle", animate("2000ms ease-in")),
             transition("activeTitle => inactiveTitle", animate("2000ms ease-out")),
         ]),
     ]

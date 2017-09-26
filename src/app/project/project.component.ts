@@ -34,6 +34,9 @@ projects: FirebaseListObservable<any[]>;
 
   constructor(db: AngularFireDatabase) {
     this.projects = db.list('/projects');
+    this.projects.subscribe(
+      val => console.log(val)
+    )
   }
 
   ngOnInit() {

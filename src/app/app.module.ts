@@ -16,6 +16,8 @@ import { ExpertiseComponent } from './expertise/expertise.component';
 import { LastprojectsComponent } from './lastprojects/lastprojects.component';
 import {NgsRevealModule} from 'ng-scrollreveal';
 import {Ng2ScrollimateModule} from 'ng2-scrollimate';
+import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 
@@ -28,7 +30,8 @@ import {Ng2ScrollimateModule} from 'ng2-scrollimate';
     ProjectComponent,
     FooterComponent,
     ExpertiseComponent,
-    LastprojectsComponent
+    LastprojectsComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import {Ng2ScrollimateModule} from 'ng2-scrollimate';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     Ng2ScrollimateModule,
+    NgHttpLoaderModule,
     NgsRevealModule.forRoot(),
     RouterModule.forRoot([
       {
@@ -44,8 +48,21 @@ import {Ng2ScrollimateModule} from 'ng2-scrollimate';
       component: HomeComponent
       },
       {
-        path:'home',
-        component: HomeComponent
+        path: 'home',
+        children: [
+          {
+            path: '',
+            component: HomeComponent
+          },
+          {
+            path: 'home',
+            component: HomeComponent
+          },
+          {
+            path: ':id',
+            component: ProjectDetailComponent
+          }
+        ]
       },
       {
         path:'about',

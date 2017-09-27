@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs/Rx';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  texts: Array<any>;
+  text: String;
 
-  ngOnInit() {
+  constructor() {
+    this.texts = ["Made For You", "By Me", "So You Can Shine"];
+    this.text = "";
   }
 
-}
+  ngOnInit() {
+    let i = 0;
+    Observable.timer(0, 500).subscribe(x => {
+      if(i < 3){
+        this.text = this.texts[i];
+        i++;
+        } else {
+        i = 0;
+        }
+      })
+    }
+  }

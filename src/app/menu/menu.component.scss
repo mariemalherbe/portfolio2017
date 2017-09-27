@@ -3,17 +3,21 @@
 @import '../../assets/scss/fonts';
 
 nav{
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
   ul{
     width: 100%;
-    height: 65px;
+    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 0px;
+    padding: 0px 65px;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     li{
       font-family: 'Droid Sans Mono', monospace;
       list-style: none;
@@ -60,6 +64,9 @@ nav{
             mix-blend-mode: multiply;
           }
         }
+      }
+      .logo{
+        height: 32px;
       }
     }
   }

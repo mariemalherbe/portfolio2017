@@ -7,6 +7,11 @@
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/fonts';
 
+.lastProjects{
+  background: white;
+  padding-bottom: 100px;
+}
+
 .project__title{
   font-family: 'Avenir LT Std 95 Black';
   font-size: 2vw;
@@ -22,6 +27,7 @@
   margin-left: 75px;
   position: relative;
   margin-top: 65px;
+  background: white;
 
 
   .project{

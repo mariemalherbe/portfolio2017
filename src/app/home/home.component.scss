@@ -3,10 +3,13 @@
 @import '../../assets/scss/fonts';
 .landingPage{
   font-family: 'Avenir LT Std 65 Medium';
-  padding-bottom: 100px;
+  padding-bottom: 15px;
   transform: inherit;
   animation: landingPageEnter 1s ease-in;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .img--darken{
     position: absolute;
     z-index: 5;
@@ -16,17 +19,18 @@
   }
   .landingPage__background{
     position: relative;
-    width: 90vw;
-    height: 100vh;
-    background-color: $grey;
+    width: 95vw;
+    height: 91vh;
     margin: 0 auto;
+    padding: 35px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 65px;
+    background-color: white;
+
     h1{
-      color: white;
+      color: grey;
       opacity: 0.45;
       z-index: 2;
       animation: titleIn 1.5s ease-in;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="269px" height="422px" viewBox="0 0 269 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>logoMarieGeo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-136.000000, -89.000000)">
+            <g id="logoMarieGeo" transform="translate(136.000000, 89.000000)">
+                <g id="body">
+                    <path d="M106,38 C124.899803,12.6666667 148.233136,3.34114971e-15 176,0 C203.766864,0 230.43353,12.6666667 256,38 L259.313604,97.6448742 L261,110 C229.327915,149.333333 199.327915,169 171,169 C142.672085,169 114.672085,149.333333 87,110 L91,97.6448742 L106,38 Z" id="Path" fill="#C6C6FF" style="mix-blend-mode: darken;"></path>
+                    <path d="M259,97 C275.567358,185.090512 269.900692,252.423845 242,299 C214.099308,345.576155 133.432642,366.909488 0,363 C52.5346584,330.76371 88.2013251,295.76371 107,258 C125.798675,220.23629 133.465342,175.23629 130,123 L171,150 L259,97 Z" id="Path-3" fill="#7DE9D8" style="mix-blend-mode: darken;" opacity="0.849999964"></path>
+                    <polygon id="Path-4" fill="#FFFFFF" points="196 79 198 64 210 58 226 64 221 79 211 84"></polygon>
+                    <polygon id="Path-4-Copy" fill="#FFFFFF" transform="translate(139.000000, 71.000000) scale(-1, 1) translate(-139.000000, -71.000000) " points="124 79 126 64 138 58 154 64 149 79 139 84"></polygon>
+                </g>
+                <g id="wing" opacity="0.849999964" style="mix-blend-mode: darken;" transform="translate(0.000000, 94.000000)">
+                    <polygon id="Path-5" fill="#9A26FF" style="mix-blend-mode: darken;" points="76 51 99 99 74 134 32 233 27 191"></polygon>
+                    <polygon id="Path-6" fill="#5B00B9" style="mix-blend-mode: darken;" points="55 131 81 196 113 145 99 97"></polygon>
+                    <polygon id="Path-7" fill="#8800FF" style="mix-blend-mode: darken;" points="99 100 132 66 149 122 113 145"></polygon>
+                    <polygon id="Path-9" fill="#AF00FF" style="mix-blend-mode: darken;" points="81 196 100 216 127 164 113 145 87.2620925 186.01979"></polygon>
+                    <polygon id="Path-10" fill="#AF00FF" style="mix-blend-mode: darken;" points="76 51 108 34 131 69 99 100"></polygon>
+                    <polygon id="Path-11" fill="#5B00B9" style="mix-blend-mode: darken;" points="76 51 92 0 115 19 111 38"></polygon>
+                    <polygon id="Path-12" fill="#9A26FF" style="mix-blend-mode: darken;" points="131 71 160 49 115 19 108 34"></polygon>
+                    <polygon id="Path-13" fill="#8800FF" style="mix-blend-mode: darken;" points="32 233 76 234 81 196"></polygon>
+                    <polygon id="Path-14" fill="#8800FF" style="mix-blend-mode: darken;" points="54 114 65 155 32 233 27 192"></polygon>
+                    <polygon id="Path-15" fill="#6E00DA" style="mix-blend-mode: darken;" points="76 234 87 241 100 216 81 196"></polygon>
+                    <polygon id="Path-16" fill="#AF00FF" style="mix-blend-mode: darken;" points="32 233 19 277 0 269 27 191"></polygon>
+                    <path d="M76,234 L46,272 L76,234 Z" id="Path-17" style="mix-blend-mode: darken;"></path>
+                    <polygon id="Path-19" fill="#8800FF" style="mix-blend-mode: darken;" points="22 314 6 328 0 269 19 277"></polygon>
+                    <polygon id="Path-20" fill="#9A26FF" style="mix-blend-mode: darken;" points="23 313 47 271 76 234 87 241 73 269"></polygon>
+                    <polygon id="Path-8" fill="#5B00B9" style="mix-blend-mode: darken;" points="32 233 76 234 46 273"></polygon>
+                    <polygon id="Path-21" fill="#6E00DA" style="mix-blend-mode: darken;" points="32 233 46 273 24 312 22 314 19 277"></polygon>
+                    <polygon id="Path-22" fill="#6E00DA" points="32 233 65 155 81 196"></polygon>
+                    <polygon id="Path-23" fill="#6E00DA" points="113 145 149 122 127 164"></polygon>
+                    <polygon id="Path-24" fill="#8223DE" points="131 71 160 49 149 122"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

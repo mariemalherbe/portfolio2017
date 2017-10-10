@@ -20,7 +20,7 @@ export class ProjectDetailComponent implements OnInit {
       private sanitizer: DomSanitizer,
     ) {
       const projectUrl = this.route.snapshot.params['id'];
-
+      
       this.projects = db.list('/projects', {
         query:{
           orderByChild: 'name',

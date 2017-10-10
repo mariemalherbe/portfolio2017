@@ -1,0 +1,114 @@
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+
+
+@import '../../assets/scss/reset';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/fonts';
+
+.project__container--details{
+  background-color: white;
+  .project__header{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+
+    h1{
+      position: absolute;
+      z-index: 0;
+      font-size: 120px;
+      opacity: 0.25;
+      margin: 0;
+    }
+
+    .project__img--portrait{
+      width: 15vw;
+      height: 35vh;
+      position: absolute;
+      z-index: 3;
+    }
+
+    #project__img--Path{
+      width: 35vw;
+      z-index: 2;
+    }
+  }
+
+  .project__specs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 150px;
+      ul{
+      list-style: none;
+      li{
+        font-family: 'Avenir LT Std 65 Medium';
+        margin-bottom: 15px;
+        &:first-child{
+            font-family: 'Avenir LT Std 95 Black';
+            margin-bottom: 45px;
+        }
+      }
+    }
+    button{
+      width: 240px;
+      height: 70px;
+      border: solid 3px $grey;
+      background-color: transparent;
+      font-size: 1em;
+    }
+  }
+
+  .project__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 150px;
+
+    p{
+      width: 35vw;
+      font-family: 'Avenir LT Std 35 Light';
+      font-size: 1em;
+      line-height: 1.7em;
+    }
+
+    .description__img{
+      width: 25vw;
+      height: 45vh;
+      background-size: cover;
+    }
+  }
+
+  .project__quote{
+    p{
+      text-align: center;
+      padding: 150px 0px;
+      font-family: 'Avenir LT Std 95 Black';
+      font-size: 2em;
+    }
+  }
+
+  .gallery__container{
+    width: 92vw;
+    margin: 50px auto;
+    height: 50vh;
+    .gallery{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 30vw);
+      grid-auto-rows: 150px;
+      grid-auto-flow: row dense;
+      &__item{
+        position: relative;
+        box-sizing: border-box;
+        grid-column-start: auto;
+        grid-row-start: auto;
+        height: 450px;
+      }
+    }
+  }
+}

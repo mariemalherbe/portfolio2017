@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SecurityContext } from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { ActivatedRoute } from '@angular/router';
 import * as _ from "lodash";
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-detail',
@@ -16,14 +17,17 @@ export class ProjectDetailComponent implements OnInit {
     constructor(
       db: AngularFireDatabase,
       private route: ActivatedRoute,
+      private sanitizer: DomSanitizer,
     ) {
-      const projectUrl = this.route.snapshot.params['id']
+      const projectUrl = this.route.snapshot.params['id'];
+
       this.projects = db.list('/projects', {
         query:{
           orderByChild: 'name',
           equalTo: projectUrl,
         }
       });
+
       console.log(this.projects);
     }
 

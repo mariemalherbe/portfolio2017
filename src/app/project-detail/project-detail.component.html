@@ -1,13 +1,47 @@
-<section class="projects__container">
-  <div class={{project.class}} *ngFor="let project of projects | async">
-    <div class="project">
-      <div class="project__img--portrait"  [style.background]="'url(../../assets/img/' + project.image + ')'"></div>
+<section class="project__container--details">
+  <div *ngFor="let project of projects | async">
+
+    <div class="project__header">
+      <div class="project__img--portrait" [style.background]="'url(../../assets/img/' + project.image + ')'"></div>
       <h1>{{project.name}}</h1>
-      <ul class="project__list" >
-        <li [style.color]="colorTags" *ngFor="let tag of project.tags.split(';')">{{tag}}</li>
-      </ul>
-      <a [routerLink]="project.url">Discover</a>
       <img id="project__img--Path" src={{project.path}} alt="">
     </div>
+
+    <div class="project__specs">
+      <ul class="project__list">
+        <li>Client</li>
+        <li>{{project.client}}</li>
+      </ul>
+
+      <ul class="project__list">
+        <li>Role</li>
+        <li *ngFor="let role of project.roles.split(';')">{{role}}</li>
+      </ul>
+
+      <ul class="project__list">
+        <li>Work</li>
+        <li>{{project.work}}</li>
+      </ul>
+
+      <button [routerLink]="project.url">Discover</button>
+    </div>
+
+    <div class="project__description">
+      <div class="description__img" [style.background]="'url(../../assets/img/' + project.imgDesc + ')'"alt=""></div>
+      <p>{{project.description}}</p>
+    </div>
+
+    <div class="project__quote">
+      <p>{{project.quote}}</p>
+    </div>
+
+    <section class="gallery__container">
+      <div class="gallery">
+        <div *ngFor="let brick of project.gallery.split('; ')" class="gallery__item" [style.background]="'url(' + brick + ')'"></div>
+      </div>
+  </section>
+
+  <app-lastprojects></app-lastprojects>
+
   </div>
 </section>

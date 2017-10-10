@@ -7,7 +7,7 @@
       <ul class="project__list" >
         <li [style.color]=project.color *ngFor="let tag of project.tags.split(';')">{{tag}}</li>
       </ul>
-      <a href="#">Discover</a>
+      <a [routerLink]="project.url">Discover</a>
       <img id="project__img--Path" src={{project.path}} alt="">
     </section>
   </section>

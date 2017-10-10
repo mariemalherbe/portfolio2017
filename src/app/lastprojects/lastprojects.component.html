@@ -2,7 +2,7 @@
 <h1 class="project__title">Last projects</h1>
   <section class="projects">
     <section class="project + {{project.class}}" *ngFor="let project of projects | async">
-      <div class="project__img--portrait"  [style.background]="'url(../../assets/img/' + project.image + ')'"></div>
+      <div class="project__img--portrait"  [style.background]="'url(assets/img/' + project.image + ')'"></div>
       <h1>{{project.name}}</h1>
       <ul class="project__list" >
         <li [style.color]=project.color *ngFor="let tag of project.tags.split(';')">{{tag}}</li>

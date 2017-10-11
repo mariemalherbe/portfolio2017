@@ -1,6 +1,6 @@
 <section class="lastProjects">
-<h1 class="project__title">Last projects</h1>
-  <section class="projects">
+<h1 class="project__title" [ngsReveal]="{ reset: true, origin: 'bottom', distance: '1000px', duration: 1500, opacity: 0, scale: 1}" >Last projects</h1>
+  <section class="projects" [ngsReveal]="{ reset: true, origin: 'bottom', distance: '1000px', duration: 1500, opacity: 0, scale: 1}">
     <section class="project + {{project.class}}" *ngFor="let project of projects | async">
       <div class="project__img--portrait"  [style.background]="'url(assets/img/' + project.image + ')'"></div>
       <h1>{{project.name}}</h1>

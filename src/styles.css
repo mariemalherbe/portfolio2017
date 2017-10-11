@@ -4,4 +4,5 @@ body{
   background: -o-linear-gradient(top left, #99faff 0%, #bc75ff 50%, #6effd3 100%);
   background: linear-gradient(to bottom right, #99faff 0%, #bc75ff 50%, #6effd3 100%);
   padding: 0vw 1vw;
+  overflow-x: hidden;
 }

@@ -2,7 +2,7 @@
   <div *ngFor="let project of projects | async">
 
     <div class="project__header">
-      <div class="project__img--portrait" [style.background]="'url(assets/img/' + project.image + ')'"></div>
+      <div class="project__img--portrait" [style.background-image]="'url(assets/img/' + project.image + ')'"></div>
       <h1>{{project.name}}</h1>
       <img id="project__img--Path" src={{project.path}} alt="">
     </div>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="project__description">
-      <div class="description__img" [style.background]="'url(assets/img/' + project.imgDesc + ')'"alt=""></div>
+      <div class="description__img" [style.background-image]="'url(assets/img/' + project.imgDesc + ')'"alt=""></div>
       <p>{{project.description}}</p>
     </div>
 

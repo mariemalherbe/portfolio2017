@@ -41,7 +41,7 @@
   .project__specs{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 130px 150px;
       ul{
       list-style: none;
@@ -60,6 +60,12 @@
       border: solid 3px $grey;
       background-color: transparent;
       font-size: 1em;
+      cursor: pointer;
+      transition-duration: 0.5s;
+      &:hover{
+        background-color: $grey;
+        color: white;
+      }
     }
   }
 
@@ -78,7 +84,7 @@
 
     .description__img{
       width: 25vw;
-      height: 45vh;
+      height: 55vh;
       background-size: cover;
     }
   }

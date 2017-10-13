@@ -32,12 +32,12 @@
     </div>
 
     <div class="project__quote">
-      <p [ngsReveal]="{ reset: true, origin: 'top', distance: '200px', duration: 1500, opacity: 0, scale : 1}">{{project.quote}}</p>
+      <p [ngsReveal]="{ reset: true, origin: 'bottom', distance: '200px', duration: 1500, opacity: 0, scale : 1}">{{project.quote}}</p>
     </div>
 
     <section class="gallery__container">
-      <div [ngsReveal]="{ reset: true, origin: 'top', distance: '200px', duration: 1500, opacity: 0, scale : 1}" class="gallery">
-        <div *ngFor="let brick of project.gallery.split('; ')" class="gallery__item" [style.background]="'url(' + brick + ')'"></div>
+      <div [ngsReveal]="{ reset: false, origin: 'bottom', distance: '500px', duration: 1500, opacity: 0, scale : 1}" class="gallery">
+        <div *ngFor="let brick of project.gallery.split(';')" class="gallery__item" [style.background-image]="'url(' + brick + ')'"></div>
       </div>
   </section>
 

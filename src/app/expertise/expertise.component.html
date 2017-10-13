@@ -1,7 +1,7 @@
 <section class="expertise" id="expertiseAnimation">
-  <h1>Expertise</h1>
+  <h1 [ngsReveal]="{ reset: true, origin: 'right', distance: '200px', duration: 1500, opacity: 0, scale : 1, delay: 500}">Expertise</h1>
 
-  <div [@animationList]="scrollimateOptions.myScrollimation.currentState" [scrollimate]="scrollimateOptions.myScrollimation" class="item">
+  <div [ngsReveal]="{ reset: true, origin: 'bottom', distance: '200px', duration: 1500, opacity: 0, scale : 1, delay: 500}" class="item">
     <span>Ui design</span>
     <ul>
       <li>Webdesign</li>
@@ -11,7 +11,7 @@
   </div>
 
 
-<div [@animationList2]="scrollimateOptions1.myScrollimation1.currentState" [scrollimate]="scrollimateOptions1.myScrollimation1" class="item">
+<div [ngsReveal]="{ reset: true, origin: 'bottom', distance: '200px', duration: 1500, opacity: 0, scale : 1, delay: 500}" class="item">
   <span>Art Direction</span>
   <ul>
     <li>Logos</li>
@@ -20,7 +20,7 @@
 </div>
 
 
-<div [@animationList3]="scrollimateOptions2.myScrollimation2.currentState" [scrollimate]="scrollimateOptions2.myScrollimation2" class="item">
+<div [ngsReveal]="{ reset: true, origin: 'bottom', distance: '200px', duration: 1500, opacity: 0, scale : 1, delay: 500}" class="item">
   <span>Front-end Development</span>
   <ul>
     <li>HTML5/CSS4</li>

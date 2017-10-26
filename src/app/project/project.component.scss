@@ -25,7 +25,7 @@
 
     &:hover{
       .project__img--portrait{
-        width: 75%;
+        width: 50vw;
         max-width: 800px;
         animation: hoverImage 0.75s ease-in;
       }
@@ -36,7 +36,7 @@
         }
       }
       &:after{
-        width: 600px;
+        width: 50vw;
         animation: afterExtend 0.5s ease-in;
       }
       a{
@@ -47,7 +47,7 @@
     }
 
     .project__img--portrait{
-      width: 35%;
+      width: 35vw;
       max-width: 420px;
       height: 400px;
       position: absolute;
@@ -60,7 +60,7 @@
       box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
     }
     #project__img--Path{
-      width: 80%;
+      width: 55vw;
       max-width: 900px;
       position: absolute;
       top: 50px;
@@ -69,7 +69,7 @@
     }
     h1{
       font-family: 'signpainter';
-      font-size: 8em;
+      font-size: 15vw;
       z-index: 2;
       position: absolute;
       bottom: 50px;
@@ -82,13 +82,13 @@
       align-items: center;
       position: absolute;
       top: 45%;
-      left: 300px;
+      left: 30vw;
       z-index: 2;
       li{
         color: white;
         font-family: 'Avenir LT Std 65 Medium';
         margin-right: 35px;
-        font-size: 30px;
+        font-size: 2vw;
       }
     }
     &:after{
@@ -165,22 +165,22 @@
 
 @keyframes hoverImage {
   from{
-    width: 35%;
+    width: 35vw;
     max-width: 420px;
   }
   to{
-    width: 75%;
+    width: 50vw;
     max-width: 800px;
   }
 }
 
 @keyframes hoverImageBack {
   from{
-    width: 75%;
+    width: 50vw;
     max-width: 800px;
   }
   to{
-    width: 35%;
+    width: 35vw;
     max-width: 420px;
   }
 }

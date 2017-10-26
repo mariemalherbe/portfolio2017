@@ -1,5 +1,5 @@
 <section class="projects__container">
-  <div   [@animationProject]="scrollimateOptions.myScrollimation.currentState" [scrollimate]="scrollimateOptions.myScrollimation" class={{project.class}} *ngFor="let project of projects | async">
+  <div [ngsReveal]="{ reset: true, origin: 'bottom', distance: '1000px', duration: 1500, opacity: 0, scale: 1}" class={{project.class}} *ngFor="let project of projects | async">
     <div (mouseover)="onMouseOver(project.color)"  (mouseout)="onMouseOut()" class="project">
       <div class="project__img--portrait"  [style.background]="'url(assets/img/' + project.image + ')'"></div>
       <h1>{{project.name}}</h1>

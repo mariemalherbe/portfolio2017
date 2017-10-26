@@ -2,11 +2,6 @@
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/fonts';
 
-
-@import '../../assets/scss/reset';
-@import '../../assets/scss/mixins';
-@import '../../assets/scss/fonts';
-
 .project__container--details{
   background-color: white;
   .project__header{
@@ -15,7 +10,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: white;
 
     h1{
       position: absolute;
@@ -30,6 +24,7 @@
       height: 35vh;
       position: absolute;
       z-index: 3;
+      background-size: cover;
     }
 
     #project__img--Path{
@@ -73,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 130px 150px;
+    padding: 0px 150px;
 
     p{
       width: 35vw;
@@ -83,8 +78,8 @@
     }
 
     .description__img{
-      width: 25vw;
-      height: 55vh;
+      width: 35vw;
+      height: 90vh;
       background-size: cover;
     }
   }
